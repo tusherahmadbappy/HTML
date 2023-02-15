@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class attribute in javascript</title>
+</head>
+<body>
+    <h2>Use the class attribute in javascript</h2>
+    <p>Click the button to hide all elements with classname 'city': </p>
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England</p>
+
+    <h2 class="city">Dhaka</h2>
+    <p>Dhaka is the capital of Bangladesh</p>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("city");
+            for(var i=0;i<x.length;i++)
+            {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
